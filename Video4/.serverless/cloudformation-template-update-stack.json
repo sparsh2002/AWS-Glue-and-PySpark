@@ -74,7 +74,7 @@
     "GlueDatabase": {
       "Type": "AWS::Glue::Database",
       "Properties": {
-        "CatalogId": "043916019468",
+        "CatalogId": "376129839614",
         "DatabaseInput": {
           "Name": "learndb"
         }
@@ -88,14 +88,14 @@
         "RecrawlPolicy": {
           "RecrawlBehavior": "CRAWL_EVERYTHING"
         },
-        "Role": "arn:aws:iam::043916019468:role/Lab3",
+        "Role": "arn:aws:iam::376129839614:role/glue-role",
         "SchemaChangePolicy": {
           "DeleteBehavior": "DEPRECATE_IN_DATABASE"
         },
         "Targets": {
           "S3Targets": [
             {
-              "Path": "s3://glue-learn-begineers/soumil_data/"
+              "Path": "s3://glue-bucket-sparsh/sparsh_data/"
             }
           ]
         }

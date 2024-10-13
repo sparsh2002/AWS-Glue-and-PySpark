@@ -93,7 +93,7 @@
           "GlueDatabase": {
             "Type": "AWS::Glue::Database",
             "Properties": {
-              "CatalogId": "043916019468",
+              "CatalogId": "376129839614",
               "DatabaseInput": {
                 "Name": "learndb"
               }
@@ -107,14 +107,14 @@
               "RecrawlPolicy": {
                 "RecrawlBehavior": "CRAWL_EVERYTHING"
               },
-              "Role": "arn:aws:iam::043916019468:role/Lab3",
+              "Role": "arn:aws:iam::376129839614:role/glue-role",
               "SchemaChangePolicy": {
                 "DeleteBehavior": "DEPRECATE_IN_DATABASE"
               },
               "Targets": {
                 "S3Targets": [
                   {
-                    "Path": "s3://glue-learn-begineers/soumil_data/"
+                    "Path": "s3://glue-bucket-sparsh/sparsh_data/"
                   }
                 ]
               }
@@ -222,7 +222,7 @@
         "GlueDatabase": {
           "Type": "AWS::Glue::Database",
           "Properties": {
-            "CatalogId": "043916019468",
+            "CatalogId": "376129839614",
             "DatabaseInput": {
               "Name": "learndb"
             }
@@ -236,14 +236,14 @@
             "RecrawlPolicy": {
               "RecrawlBehavior": "CRAWL_EVERYTHING"
             },
-            "Role": "arn:aws:iam::043916019468:role/Lab3",
+            "Role": "arn:aws:iam::376129839614:role/glue-role",
             "SchemaChangePolicy": {
               "DeleteBehavior": "DEPRECATE_IN_DATABASE"
             },
             "Targets": {
               "S3Targets": [
                 {
-                  "Path": "s3://glue-learn-begineers/soumil_data/"
+                  "Path": "s3://glue-bucket-sparsh/sparsh_data/"
                 }
               ]
             }
@@ -268,7 +268,7 @@
     "isDashboardMonitoringPreconfigured": false
   },
   "package": {
-    "artifactDirectoryName": "serverless/sls-create-glue-crawler/dev/1668083978751-2022-11-10T12:39:38.751Z",
+    "artifactDirectoryName": "serverless/sls-create-glue-crawler/dev/1728739149779-2024-10-12T13:19:09.779Z",
     "artifact": ""
   }
 }

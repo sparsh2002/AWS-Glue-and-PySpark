@@ -161,13 +161,8 @@ def main():
     """
 
     data = DataGenerator.get_data()
-    helper_process_files = AWSS3(
-        aws_access_key_id="XXXX",
-        aws_secret_access_key="XXX",
-        region_name="us-east-1",
-        bucket="XXXXX"
-    )
-    key = f"soumil_data/{uuid.uuid4().__str__()}.json"
+    helper_process_files = AWSS3()
+    key = f"sparsh_data/{uuid.uuid4().__str__()}.json"
     helper_process_files.put_files(
         Key=key, Response=json.dumps(data)
     )
